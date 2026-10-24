@@ -1,100 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080d14">
-<meta name="description" content="WE4 Solutions provides professional CCTV installation, solar cameras, smart locks, networking, computer service and gate automation in Meloor, Chalakudy, Thrissur and Ernakulam, Kerala.">
-<title>WE4 Solutions | CCTV & Smart Security Kerala</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="WE4 Solutions offers CCTV installation, smart locks, solar cameras, networking, computer service and gate automation in Meloor, Chalakudy, Thrissur and Ernakulam, Kerala.">
+<title>WE4 Solutions | CCTV & IT Security Kerala</title>
 <style>
+:root{--black:#080b12;--dark:#111827;--gold:#efbd43;--red:#df2635;--soft:#f4f5f8;--ink:#151b26}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#171c25;background:#fff;line-height:1.6}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
 a{text-decoration:none;color:inherit}
-:root{--red:#e51d2a;--dark:#080d14;--grey:#f3f5f8}
-.top{background:#05080d;color:#eee;padding:9px 5%;font-size:13px;text-align:center}
-header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 3px 20px #0001}
-.nav{max-width:1200px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.logo{font-size:36px;font-weight:900;letter-spacing:-2px;line-height:1}
-.logo b{color:var(--red)}
-.logo small{display:block;font-size:10px;letter-spacing:3px;color:#555;text-align:center}
-.links{display:flex;gap:22px;font-size:14px;font-weight:bold}
+.topbar{background:var(--black);color:white;text-align:center;padding:8px;font-size:13px}
+header{position:sticky;top:0;z-index:10;background:white;box-shadow:0 3px 18px #0001}
+.nav{max-width:1200px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{width:180px;max-width:35vw;height:auto;object-fit:contain}
+.links{display:flex;gap:18px;font-size:14px;font-weight:bold}
 .links a:hover{color:var(--red)}
-.btn{display:inline-block;padding:12px 18px;border-radius:8px;font-weight:bold;font-size:14px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;padding:12px 17px;border-radius:9px;font-weight:bold;font-size:14px}
 .red{background:var(--red);color:white}
-.green{background:#0b9e59;color:white}
-.hero{background:linear-gradient(110deg,#070b12,#152537);color:#fff}
-.hero-inner{max-width:1200px;margin:auto;padding:75px 24px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}
-.tag{font-size:12px;font-weight:bold;letter-spacing:2px;color:#ff5b65}
-h1{font-size:clamp(40px,5vw,66px);line-height:1.08;letter-spacing:-2px;margin:15px 0}
-h1 span,.accent{color:#ff3845}
-.hero p{color:#cbd2dc;font-size:17px;max-width:570px;margin-bottom:25px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap}
-.points{margin-top:25px;color:#e0e5ec;font-size:13px}
-.camera{background:linear-gradient(145deg,#ffffff18,#ffffff04);border:1px solid #ffffff28;border-radius:22px;padding:35px 20px;text-align:center}
-.camera .emoji{font-size:120px;line-height:1.4}
-.camera strong{display:block;letter-spacing:2px;font-size:13px}
+.gold{background:var(--gold);color:#151515}
+.outline{border:1px solid white;color:white}
+.hero{background:radial-gradient(circle at 85% 20%,#29384c,#111827 45%,#080b12 85%);color:white}
+.hero-inner{max-width:1200px;margin:auto;padding:70px 24px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}
+.tag{font-size:13px;font-weight:900;letter-spacing:2px;color:var(--gold)}
+h1{font-size:clamp(39px,5vw,66px);line-height:1.08;letter-spacing:-1.5px;margin:15px 0 22px}
+h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#d6dce6;max-width:600px}
+.proof{margin-top:22px;font-size:13px;color:#e5e9ef}
+.visual{padding:25px;background:#ffffff12;border:1px solid #ffffff30;border-radius:22px;text-align:center}
+.visual img{width:100%;max-width:420px;max-height:300px;object-fit:contain;background:white;border-radius:12px}
+.visual strong{display:block;margin-top:15px;letter-spacing:2px;font-size:13px}
 .section{padding:65px 22px}
 .container{max-width:1200px;margin:auto}
-.heading{text-align:center;margin-bottom:30px}
-.heading h2{font-size:clamp(28px,3.5vw,40px);line-height:1.2;margin:8px 0}
-.heading p{color:#697381}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.services{background:var(--grey)}
-.card{background:#fff;border:1px solid #e4e7ec;border-radius:14px;overflow:hidden;box-shadow:0 7px 22px #00000006;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #00000012}
-.pic{height:125px;display:grid;place-items:center;background:linear-gradient(135deg,#e8edf4,#fafbfc);font-size:54px}
-.card-content{padding:18px}
-.card h3{font-size:17px;margin:0 0 7px}
-.card p{font-size:13px;color:#687383;margin:0}
-.card a{display:inline-block;margin-top:13px;color:var(--red);font-size:13px;font-weight:bold}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.why-card{border:1px solid #e5e8ed;border-radius:12px;padding:22px}
-.why-card b{display:block;margin:10px 0}
-.why-card p{margin:0;color:#687383;font-size:14px}
-.icon{font-size:28px}
-.brands{background:#0b1119;color:white}
-.brand-list{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.brand{background:#fff;color:#151b24;border-radius:7px;padding:10px 17px;font-weight:900}
-.locations{background:var(--grey)}
-.location-box{background:#fff;padding:28px;border-radius:15px;text-align:center}
-.pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
-.pills span{background:#fff0f1;color:#b4101b;border-radius:25px;padding:8px 15px;font-weight:bold;font-size:13px}
-.contact{background:var(--dark);color:white;padding:55px 22px}
-.contact-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:25px}
-.contact p{color:#c5ccd5}
-footer{background:#04070b;color:#adb5c0;padding:20px;text-align:center;font-size:13px}
+.heading{text-align:center;max-width:750px;margin:0 auto 32px}
+.heading .tag{color:var(--red)}
+h2{font-size:clamp(28px,3.5vw,42px);line-height:1.2;margin:10px 0}
+.heading p{color:#626d7c;font-size:17px}
+.services{background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card{background:white;border:1px solid #e2e6ec;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px #00000008}
+.pic{height:115px;display:grid;place-items:center;background:linear-gradient(135deg,#fff1cc,#f2f4f8);font-size:48px}
+.content{padding:18px}
+.content h3{margin:0 0 8px;font-size:17px}
+.content p{margin:0;color:#626d7c;font-size:14px}
+.content a{display:inline-block;margin-top:12px;color:var(--red);font-size:13px;font-weight:bold}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.why article{border:1px solid #e2e6ec;border-radius:13px;padding:20px}
+.why h3{font-size:16px}
+.why p{font-size:14px;color:#626d7c}
+.brands{background:var(--dark);color:white}
+.brands .heading p{color:#cbd2dc}
+.brand-list,.areas{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.brand-list span{background:white;color:#151b26;border-radius:7px;padding:10px 15px;font-weight:900}
+.area-box{background:var(--soft);border-radius:16px;text-align:center;padding:28px}
+.areas span{border:1px solid #e0e3e8;background:white;border-radius:25px;padding:8px 14px;color:#b21e2a;font-weight:bold;font-size:14px}
+.contact{background:var(--black);color:white;padding:55px 22px}
+.contact-inner{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.contact p{color:#cbd2dc}
+footer{background:#030509;color:#adb5c1;text-align:center;padding:20px;font-size:13px}
 @media(max-width:850px){
 .links{display:none}
-.hero-inner{grid-template-columns:1fr;padding:52px 20px}
-.camera .emoji{font-size:90px}
-.grid{grid-template-columns:repeat(2,1fr)}
-.why-grid{grid-template-columns:repeat(2,1fr)}
+.hero-inner{grid-template-columns:1fr;padding:48px 18px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.why{grid-template-columns:repeat(2,minmax(0,1fr))}
 .contact-inner{display:block}
+.contact .buttons{margin-top:20px}
 }
-@media(max-width:420px){
-.nav{padding:12px}
-.logo{font-size:30px}
-.btn{padding:11px 12px;font-size:12px}
+@media(max-width:480px){
+.nav{padding:10px}
+.logo{width:125px}
+.nav .btn{font-size:12px;padding:10px}
+.hero-inner{padding:42px 17px}
 h1{font-size:39px}
-.grid,.why-grid{grid-template-columns:1fr}
-.pic{height:140px}
-.section{padding:45px 16px}
+.hero p{font-size:16px}
+.section{padding:45px 15px}
+.grid,.why{grid-template-columns:1fr}
+.visual{padding:14px}
+.visual img{max-height:220px}
 }
 </style>
 </head>
 <body>
-<div class="top">📍 Meloor • Chalakudy • Thrissur • Ernakulam &nbsp; | &nbsp; ☎ 906 111 0102</div>
+<div class="topbar">📍 Meloor · Chalakudy · Angamaly · Thrissur · Ernakulam | ☎ +91 90611 10102</div>
 <header>
 <nav class="nav">
-<a class="logo" href="#home">WE<b>4</b><small>EACH SOLUTIONS</small></a>
-<div class="links">
-<a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why WE4</a><a href="#brands">Brands</a><a href="#contact">Contact</a>
-</div>
-<div class="buttons">
-<a class="btn red" href="tel:+919061110102">Call Now</a>
-<a class="btn green" href="https://wa.me/919061110102">WhatsApp</a>
-</div>
+<a href="#home" aria-label="WE4 Solutions home"><img class="logo" src="C154C6BB-6BB7-4AB9-9851-18A15AAF0286.png" alt="WE4 CCTV and IT Solutions logo"></a>
+<div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why WE4</a><a href="#brands">Brands</a><a href="#contact">Contact</a></div>
+<div class="buttons"><a class="btn red" href="tel:+919061110102">Call Now</a><a class="btn gold" href="https://wa.me/919061110102">WhatsApp</a></div>
 </nav>
 </header>
 <main>
@@ -102,72 +98,48 @@ h1{font-size:39px}
 <div class="hero-inner">
 <div>
 <div class="tag">YOUR SAFETY. OUR PRIORITY.</div>
-<h1>CCTV & <span>SMART SECURITY</span> FOR EVERY SPACE.</h1>
-<p>Professional security, IT networking and smart automation for homes, shops, offices and businesses. Quality solutions with installation and support.</p>
-<div class="buttons">
-<a class="btn red" href="#contact">Get a Free Consultation ↗</a>
-<a class="btn" style="border:1px solid #fff;color:white" href="https://wa.me/919061110102">Chat on WhatsApp</a>
+<h1>CCTV &amp; <span>SMART SECURITY</span> FOR EVERY SPACE.</h1>
+<p>Professional CCTV, IT networking and smart automation for homes, shops, offices and businesses. Quality products, careful installation and helpful support from WE4 Solutions.</p>
+<div class="buttons"><a class="btn red" href="#contact">Get a Free Consultation ↗</a><a class="btn outline" href="https://wa.me/919061110102?text=Hello%20WE4%20Solutions%2C%20I%20need%20a%20quotation.">Chat on WhatsApp</a></div>
+<div class="proof">✓ Professional Installation &nbsp; ✓ Quality Products &nbsp; ✓ Helpful Support</div>
 </div>
-<div class="points">✓ Professional Installation &nbsp; ✓ Quality Products &nbsp; ✓ Helpful Support</div>
-</div>
-<div class="camera">
-<div class="emoji">📹</div>
-<strong>SMART SECURITY • BUILT AROUND YOU</strong>
-<p>Protect your home, shop and workplace with WE4 Solutions.</p>
-</div>
+<div class="visual"><img src="C154C6BB-6BB7-4AB9-9851-18A15AAF0286.png" alt="WE4 Solutions logo"><strong>SMART SECURITY · BUILT AROUND YOU</strong></div>
 </div>
 </section>
 <section class="section services" id="services">
 <div class="container">
-<div class="heading"><div class="tag">OUR SERVICES</div><h2>Complete Solutions for a <span class="accent">Safer Tomorrow</span></h2><p>One trusted team for security, IT and automation.</p></div>
+<div class="heading"><div class="tag">OUR SERVICES</div><h2>Complete Solutions for a <span style="color:#df2635">Safer Tomorrow</span></h2><p>One trusted team for security, IT and automation.</p></div>
 <div class="grid">
-<div class="card"><div class="pic">📹</div><div class="card-content"><h3>CCTV Camera Systems</h3><p>IP cameras, analog cameras, DVR/NVR and installation.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20CCTV%20quotation">Get a Quote ↗</a></div></div>
-<div class="card"><div class="pic">☀️</div><div class="card-content"><h3>Wi-Fi & Solar Cameras</h3><p>Wireless, 4G and solar-powered security cameras.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20solar%20camera">Get a Quote ↗</a></div></div>
-<div class="card"><div class="pic">🔐</div><div class="card-content"><h3>Smart Door Locks</h3><p>Fingerprint, PIN, RFID and smart access systems.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20smart%20lock">Explore Locks ↗</a></div></div>
-<div class="card"><div class="pic">🖐️</div><div class="card-content"><h3>Attendance Systems</h3><p>Biometric and RFID systems for offices and businesses.</p><a href="https://wa.me/919061110102?text=I%20need%20an%20attendance%20system">Get a Quote ↗</a></div></div>
-<div class="card"><div class="pic">🖥️</div><div class="card-content"><h3>Computer Sales & Service</h3><p>Computer supply, repairs, upgrades and IT support.</p><a href="https://wa.me/919061110102?text=I%20need%20computer%20service">Get IT Support ↗</a></div></div>
-<div class="card"><div class="pic">🌐</div><div class="card-content"><h3>Networking Solutions</h3><p>LAN cabling, routers, switches and Wi-Fi setup.</p><a href="https://wa.me/919061110102?text=I%20need%20networking%20work">Get a Quote ↗</a></div></div>
-<div class="card"><div class="pic">🚧</div><div class="card-content"><h3>Gate Automation</h3><p>Remote gates, access control and automation.</p><a href="https://wa.me/919061110102?text=I%20need%20gate%20automation">Get a Quote ↗</a></div></div>
-<div class="card"><div class="pic">🛠️</div><div class="card-content"><h3>Maintenance & Support</h3><p>Installation, servicing and troubleshooting assistance.</p><a href="https://wa.me/919061110102?text=I%20need%20maintenance%20support">Contact Us ↗</a></div></div>
+<div class="card"><div class="pic">📹</div><div class="content"><h3>CCTV Camera Systems</h3><p>IP and analog cameras, DVR/NVR systems and installation.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20CCTV%20quotation">Get a Quote ↗</a></div></div>
+<div class="card"><div class="pic">☀️</div><div class="content"><h3>Wi-Fi &amp; Solar Cameras</h3><p>Wireless, 4G and solar-powered security cameras.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20solar%20camera">Get a Quote ↗</a></div></div>
+<div class="card"><div class="pic">🔐</div><div class="content"><h3>Smart Door Locks</h3><p>Fingerprint, PIN, RFID and smart access systems.</p><a href="https://wa.me/919061110102?text=I%20need%20a%20smart%20lock">Explore Locks ↗</a></div></div>
+<div class="card"><div class="pic">🖐️</div><div class="content"><h3>Attendance Systems</h3><p>Biometric and RFID systems for workplaces.</p><a href="https://wa.me/919061110102?text=I%20need%20an%20attendance%20system">Get a Quote ↗</a></div></div>
+<div class="card"><div class="pic">🖥️</div><div class="content"><h3>Computer Sales &amp; Service</h3><p>Computer supply, repairs, upgrades and IT support.</p><a href="https://wa.me/919061110102?text=I%20need%20computer%20service">Get IT Support ↗</a></div></div>
+<div class="card"><div class="pic">🌐</div><div class="content"><h3>Networking Solutions</h3><p>LAN cabling, routers, switches and Wi-Fi setup.</p><a href="https://wa.me/919061110102?text=I%20need%20networking%20work">Get a Quote ↗</a></div></div>
+<div class="card"><div class="pic">🚧</div><div class="content"><h3>Gate Automation</h3><p>Remote gates, access control and automation.</p><a href="https://wa.me/919061110102?text=I%20need%20gate%20automation">Get a Quote ↗</a></div></div>
+<div class="card"><div class="pic">🛠️</div><div class="content"><h3>Maintenance &amp; Support</h3><p>CCTV servicing, troubleshooting and maintenance.</p><a href="https://wa.me/919061110102?text=I%20need%20maintenance%20support">Contact Us ↗</a></div></div>
 </div>
 </div>
 </section>
-<section class="section" id="why">
-<div class="container">
-<div class="heading"><div class="tag">WHY CHOOSE WE4?</div><h2>Service You Can <span class="accent">Rely On</span></h2></div>
-<div class="why-grid">
-<div class="why-card"><div class="icon">✓</div><b>Quality Products</b><p>Solutions chosen to match your site and requirements.</p></div>
-<div class="why-card"><div class="icon">⚙️</div><b>Professional Installation</b><p>Careful installation and clear system guidance.</p></div>
-<div class="why-card"><div class="icon">₹</div><b>Fair Quotations</b><p>Clear options to help you make the right decision.</p></div>
-<div class="why-card"><div class="icon">☎</div><b>Helpful Support</b><p>Contact us for service and troubleshooting assistance.</p></div>
+<section class="section" id="why"><div class="container">
+<div class="heading"><div class="tag">WHY CHOOSE WE4?</div><h2>Service You Can <span style="color:#df2635">Rely On</span></h2><p>Practical solutions and friendly service for your property or business.</p></div>
+<div class="why">
+<article><h3>✓ Quality Products</h3><p>Solutions selected for your site and requirements.</p></article>
+<article><h3>⚙ Careful Installation</h3><p>Neat installation and clear system guidance.</p></article>
+<article><h3>₹ Clear Quotations</h3><p>Understand your options before choosing.</p></article>
+<article><h3>☎ Helpful Support</h3><p>Contact us for service and troubleshooting.</p></article>
 </div>
-</div>
-</section>
-<section class="section brands" id="brands">
-<div class="container">
+</div></section>
+<section class="section brands" id="brands"><div class="container">
 <div class="heading"><div class="tag">TRUSTED TECHNOLOGY</div><h2>Leading CCTV Brands</h2><p>Ask us about availability for your preferred brand.</p></div>
-<div class="brand-list">
-<span class="brand">CP PLUS</span><span class="brand">HIKVISION</span><span class="brand">DAHUA</span><span class="brand">UNIVIEW</span><span class="brand">EZVIZ</span><span class="brand">PRAMA</span><span class="brand">TIANDY</span><span class="brand">BOSCH</span><span class="brand">GODREJ</span><span class="brand">IMOU</span>
-</div>
-</div>
-</section>
-<section class="section locations">
-<div class="container">
-<div class="location-box">
-<div class="tag">OUR SERVICE AREA</div>
-<h2>Local Service. Professional Results.</h2>
-<p>Based in Meloor, serving nearby towns and surrounding areas.</p>
-<div class="pills"><span>Meloor</span><span>Chalakudy</span><span>Angamaly</span><span>Thrissur</span><span>Ernakulam</span></div>
-</div>
-</div>
-</section>
-<section class="contact" id="contact">
-<div class="contact-inner">
-<div><div class="tag">CONTACT WE4 SOLUTIONS</div><h2>Ready to Secure Your Space?</h2><p>📍 Meloor • Chalakudy • Thrissur • Ernakulam</p><p>☎ +91 90611 10102</p><p>✉ we4eachtech@gmail.com</p><p>🌐 we4solutions.in</p></div>
-<div class="buttons"><a class="btn red" href="tel:+919061110102">Call Now</a><a class="btn green" href="https://wa.me/919061110102?text=Hello%20WE4%20Solutions%2C%20I%20need%20a%20quotation.">WhatsApp Us</a></div>
-</div>
-</section>
+<div class="brand-list"><span>CP PLUS</span><span>HIKVISION</span><span>DAHUA</span><span>UNIVIEW</span><span>EZVIZ</span><span>PRAMA</span><span>TIANDY</span><span>BOSCH</span><span>GODREJ</span><span>IMOU</span></div>
+</div></section>
+<section class="section"><div class="container"><div class="area-box"><div class="tag">OUR SERVICE AREA</div><h2>Local Service. Professional Results.</h2><p>Based in Meloor, serving nearby towns and surrounding areas.</p><div class="areas"><span>Meloor</span><span>Chalakudy</span><span>Angamaly</span><span>Thrissur</span><span>Ernakulam</span></div></div></div></section>
+<section class="contact" id="contact"><div class="contact-inner">
+<div><div class="tag">CONTACT WE4 SOLUTIONS</div><h2>Ready to Secure Your Space?</h2><p>📍 Meloor · Chalakudy · Thrissur · Ernakulam</p><p>☎ +91 90611 10102</p><p>✉ we4eachtech@gmail.com</p><p>🌐 we4solutions.in</p></div>
+<div class="buttons"><a class="btn red" href="tel:+919061110102">Call Now</a><a class="btn gold" href="https://wa.me/919061110102?text=Hello%20WE4%20Solutions%2C%20I%20need%20a%20quotation.">WhatsApp Us</a></div>
+</div></section>
 </main>
-<footer>© 2026 WE4 Solutions. All rights reserved. | CCTV • IT • Networking • Smart Security</footer>
+<footer>© 2026 WE4 Solutions. All rights reserved. · CCTV · IT · Networking · Smart Security</footer>
 </body>
 </html>
